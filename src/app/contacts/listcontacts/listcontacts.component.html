@@ -1,0 +1,33 @@
+<div class="container">
+  
+  <table class="table table-hover table-bordered table-inverse">
+    <tr>
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Number phone</th>
+    </tr>
+
+    <tr *ngFor="let contact of contacts" >
+      <!-- <td>
+        <a [routerLink]="['/getcar', car.id]">{{car.mark}}</a>
+      </td> -->
+      <td>
+        {{contact.id }}
+      </td>
+
+      <td>
+        {{contact.firstNameDto}}
+      </td>
+
+      <td>
+        {{contact.lastNameDto}}
+      </td>
+
+      <td class="test">
+        {{contact.numberPhoneDto}}
+      </td>
+     
+    </tr>
+  </table>
+</div>
